@@ -132,8 +132,8 @@
                     <? $primerValor=explode("_", $ubicacion) ?>
                     <? $primerValor=$primerValor['0']?>
                     <? //print_r ($arrayName)?>
-                    <? $ubicacion="'wg_target_div_".$ubicacion. "'"?>
-                   
+                    <? print $ubicacion="'wg_target_div_".$ubicacion. "'"?>
+                    <? echo $ubicacion ?>
                     <script src="http://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
                     <script language="JavaScript" type="text/javascript">
                     //<![CDATA[
