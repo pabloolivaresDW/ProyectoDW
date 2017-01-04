@@ -9,9 +9,9 @@ class Playa_model extends CI_Model {
   }
 
   public function get_ubicacion(){
-  	$query=$this->db->query("SELECT  PLA_ORIENTACION from SGC_PLAYA where PLA_ID=5");
+  	$query=$this->db->query("SELECT  PLA_CODIGO_WINDGURU from SGC_PLAYA where PLA_ID=1");
   	$playas=$query->result();
-    $valor=$playas['0']->PLA_ORIENTACION;
+    $valor=$playas['0']->PLA_CODIGO_WINDGURU;
   	return $valor;
   }
 
