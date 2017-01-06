@@ -94,6 +94,7 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+<<<<<<< HEAD
 
 
 $db['testGraf'] = array(
@@ -117,3 +118,5 @@ $db['testGraf'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+=======
+>>>>>>> Graficar2
