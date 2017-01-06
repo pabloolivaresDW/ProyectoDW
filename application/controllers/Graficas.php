@@ -12,14 +12,19 @@ class Graficas extends CI_Controller{
 	}
 
 	function index(){
+		$this->load->view('grafico');
+	}
+
+	function ajax(){
 		$query = $this->Conexion->obtenerdatos();
 		if($query != false){
-			foreach ($query->result() as $row) {
+			foreach ($query->result_array() as $row) {
 				$data[] = $row;
 			}
 		}
-		$json = json_encode($data);
-		$this->load->view('grafico');
+		header('Content-Type: application/json');
+	  	echo json_encode($data);
+	  	return;
 	}
 
 }
