@@ -22,6 +22,9 @@
 
     <!-- Custom Fonts -->
     <link href="<?php echo base_url(); ?>assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet prefetch' href='../assets/vendor/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='../assets/vendor/morrisjs/morris.css'>
+    <link rel="stylesheet" href="../assets/morriscss/style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -216,8 +219,15 @@
             </div>
         </div>
 
-
-
+        <div class"row">
+            <div>
+                <div class="col-sm-6 text-center">
+                    <label class="label label-success">Grafico de Mareas</label>
+                    <div id="area-chart" >
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -253,7 +263,11 @@
 
     <!-- AJAX para eventos -->
     <script src="<?php echo base_url(); ?>assets/js/ajax.js"></script>
-
+    <script src='../assets/vendor/bootstrap/css/bootstrap.min.css'></script>
+    <script src='../assets/vendor/jquery/jquery.min.js'></script>
+    <script src='../assets/vendor/raphael/raphael.min.js'></script>
+    <script src='../assets/vendor/morrisjs/morris.min.js'></script>
+    <script src="../assets/js/graficar.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
    
